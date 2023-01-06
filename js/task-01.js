@@ -4,6 +4,6 @@ const totalCategories = document.querySelectorAll("li.item");
 console.log("Number of categories: ", totalCategories.length);
 
 totalCategories.forEach((element) => {
-  console.log(`Категория: ${element.firstElementChild.textContent}, 
-    Количество элементов: ${element.lastElementChild.children.length}`);
+  console.log(`Category: ${element.firstElementChild.textContent} 
+    Elements: ${element.lastElementChild.children.length}`);
 });
