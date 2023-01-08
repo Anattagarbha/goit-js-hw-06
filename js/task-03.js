@@ -18,11 +18,13 @@ let list = document.querySelector(".gallery");
 let markup = images
   .map(
     (image) =>
-      `<li><img class="picture" src=${image.url} width="400" alt=${image.alt}></img></li>`
+      `<li><img class="picture" src=${image.url} width="1260" alt=${image.alt}></img></li>`
   )
   .join("");
 list.insertAdjacentHTML("beforeend", markup);
 
 list.style.listStyle = "none";
 list.style.display = "flex";
+list.style.flexDirection = "column";
+list.style.alignItems = "center";
 list.style.gap = "15px";
