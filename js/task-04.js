@@ -7,3 +7,8 @@ plusBtn.addEventListener("click", () => {
   counterValue++;
   displayCounter.textContent = counterValue;
 });
+
+minusBtn.addEventListener("click", () => {
+  counterValue--;
+  displayCounter.textContent = counterValue;
+});
