@@ -22,3 +22,7 @@ let markup = images
   )
   .join("");
 list.insertAdjacentHTML("beforeend", markup);
+
+list.style.listStyle = "none";
+list.style.display = "flex";
+list.style.gap = "15px";
