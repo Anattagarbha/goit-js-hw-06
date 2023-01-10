@@ -1,3 +1,5 @@
+"use strict";
+
 let counterValue = 0;
 let displayCounter = document.querySelector("#value");
 let plusBtn = document.querySelector('button[data-action="increment"]');
