@@ -1,7 +1,12 @@
+// 1 - select input and output nodes
+// 2 - create input listener function
+// 3 - check anonymous condition
+// 4 - if false, print input message
+
 "use strict";
 
-let textInput = document.querySelector("#name-input");
-let textOutput = document.querySelector("#name-output");
+const textInput = document.querySelector("#name-input");
+const textOutput = document.querySelector("#name-output");
 
 textInput.addEventListener("input", (event) => {
   if (event.target.value === "") {

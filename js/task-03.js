@@ -1,5 +1,11 @@
 "use strict";
 
+// 1 - select node
+// 2 - iterate over default array
+// 3 - create markup for each node using template string
+// 4 - join result into string
+// 5 - export to dom
+
 const images = [
   {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
@@ -15,9 +21,9 @@ const images = [
   },
 ];
 
-let list = document.querySelector(".gallery");
+const list = document.querySelector(".gallery");
 
-let markup = images
+const markup = images
   .map(
     (image) =>
       `<li><img class="picture" src=${image.url} width="1260" alt=${image.alt}></img></li>`
