@@ -5,6 +5,8 @@
 // 5 - add create listener function
 // 6 - add destroy listener function
 
+"use strict";
+
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
